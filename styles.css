@@ -1,0 +1,225 @@
+/* Root styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: #000; /* black background */
+  color: #e5e7eb; /* tailwind gray-200 */
+  line-height: 1.6;
+}
+
+main.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero section */
+.hero {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #000 0%, #0f172a 50%, #1e293b 100%);
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #22d3ee; /* cyan-400 */
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #22d3ee;
+  margin: 0 0 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #cbd5e1; /* gray-300 */
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  color: #22d3ee;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.15);
+  color: #67e8f9; /* lighter cyan */
+}
+
+/* General container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section styling */
+.section {
+  margin-top: 3rem;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #22d3ee;
+  border-bottom: 2px solid #334155; /* gray-700 */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Card grid and cards */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.card {
+  background-color: #1f2937; /* gray-800 */
+  border: 1px solid #374151; /* gray-700 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  color: #22d3ee;
+}
+
+.card .subtitle {
+  color: #94a3b8; /* gray-400 */
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.card .timeframe {
+  color: #6b7280; /* gray-500 */
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0 0 0.5rem;
+  color: #d1d5db; /* gray-300 */
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #22d3ee;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #67e8f9;
+}
+
+/* Publications list */
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-list li {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+.publication-list strong {
+  display: block;
+  color: #22d3ee;
+  margin-bottom: 0.25rem;
+}
+
+.publication-list .journal {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.publication-list a {
+  color: #22d3ee;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.publication-list a:hover {
+  color: #67e8f9;
+  text-decoration: underline;
+}
+
+/* Skills section */
+.skill-groups {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skill-group h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #22d3ee;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background-color: #111827;
+  color: #22d3ee;
+  border: 1px solid #22d3ee;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #374151;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
